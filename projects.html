@@ -17,10 +17,25 @@
     </nav>
 
     <h1>Projects</h1>
-    
-    <a href="https://nemocase.github.io/conjugator/">CONJUGATOR</a>
-    
-    <a href="https://upload.wikimedia.org/wikipedia/commons/9/98/UK_traffic_sign_7001.svg">SNAKE GAME</a>
+    <h2><a href="https://nemocase.github.io/conjugator/">Conjugator</a></h2>
+    <p>A website that tests the user with Spanish verbs and their conjugations, drawn from a JSON document.</p>
+    <p>I wanted to make something that would be useful for me. As I'm currently learning Spanish, I decided on something to help me revise.</p>
+    <p>The basic idea was to create something like a digital flashcard, to aid the revision of Spanish verbs and conjugations.</p>
+    <p>Regular verbs follow predictable patterns, so all I needed to store in JSON was a list of verbs and meanings. A series of JavaScript functions
+        then imports the list, selects a verb at random, and applies a formula to conjugate the yo, tú, usted, nosotros, vosotros, and ustedes forms.</p>
+    <p>Irregular verbs conjugate in individual ways, so their conjugations need to be stored in the JSON.</p>
+    <p>When a verb is selected with the Random Word button, a function checks the 'regular' property every verb has to determine if a word is regular or irregular.</p>
+
+    <h2>Pomodoro</h2>
+    <p>A website with a timer based on the Pomodoro Technique. The timer counts 4 cycles; each cycle consists of a 25 minute work segment and a 5 minute break. After 4 cycles, the session is complete.</p>
+    <p>I use the Pomodoro Technique to make sure I take regular breaks from the screen, so this was another project directly useful to me.</p>
+    <p>When started by the user, the timer should count 25 minutes; announce a break; count a further 5 minutes; and update the cycle count.</p>
+    <p>This process should loop until the cycle count hits 4, at which point the count resets and the clock stops.</p>
+    <p>Currently I have the code working in Python, but I'm trying to get it working in JS, so it's easier to integrate into a website.</p>
+
+    <h2>Snake</h2>
+    <p>The classic Snake videogame, made in Python. I followed a YouTube tutorial to create it.</p>
+    <p>Still figuring out how to run a Python script from GitHub!</p>
     
 </body>
 </html>
