@@ -24,9 +24,5 @@ body {
 }
 
 #profo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 5px;
-    padding: 5px;
+    width: 75px;
 }
