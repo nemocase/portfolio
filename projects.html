@@ -18,7 +18,7 @@
 
     <h1>Projects</h1>
     <h2><a href="https://nemocase.github.io/conjugator/">Conjugator</a></h2>
-    <div class="textBox>
+        <div class="textBox">
         <p>
             A website that randomly selects a Spanish verb from a JSON list, conjugates it, and displays the result to the user.
         </p>
@@ -29,16 +29,28 @@
         <p>
             The site uses JSON to store a list of verbs. Each verb has three properties:
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>The infinitive form (e.g. "hablar")</li>
+                <li>The meaning (e.g. "to speak")</li>
+                <li>Whether the verb is regular or irregular</li>
             </ol>
-            Regular verbs follow predictable patterns, so all I needed to store in JSON was a list of verbs and meanings. A series of JavaScript functions
-            then imports the list, selects a verb at random, and applies a formula to conjugate the yo, tú, usted, nosotros, vosotros, and ustedes forms.
+            The JSON list is imported as an array as soon as the page starts. When the user clicks 'Random Word', a random number generator selects a verb from
+            the array; another function processes it based on the 'regular' property.
         </p>
         <p>
-            Irregular verbs conjugate in individual ways, so their conjugations need to be stored in the JSON. When a verb is selected with the Random Word button,
-            a function checks the 'regular' property every verb has to determine if a word is regular or irregular.
+            Regular verbs follow predictable patterns, so their 'regular' value is simply "reg". Verbs with that value are passed to another function which
+            conjugates the yo, tú, usted, nosotros, vosotros, and ustedes forms depending on the last two letters of the verb (<i>-ar</i>, <i>-er</i>, or <i>-ir</i>).
+            The result is then passed to a display function which writes them into the HTML table, then makes the table visible. Irregular verbs conjugate in individual 
+            ways, so their conjugations are stored under 'regular', and are simply passed to the table as is.
+        </p>
+        <p>
+            To avoid repetition, each time a random verb is selected, it's added to a 'previous word' array. Newly generated verbs are checked against the array; 
+            if there's a match, another random verb is chosen instead. Once the array exceeds 5 words, the first word is dropped; the limit was chosen arbitrarily,
+            but I found that if the array gets too long the code doesn't like it (though it still functions).
+        </p>
+        <p>
+            As well as selecting a random word, the website can conjugate any regular Spanish verb from an infinitive (hablar, comer, vivir etc) that the user enters.
+            However, this simply applies the conjugation function to the input; at present it has no way of checking whether the input is a real Spanish word. A third
+            function was added to test the user, but while functional, it doesn't yet work as intended.
         </p>
     </div>
 
