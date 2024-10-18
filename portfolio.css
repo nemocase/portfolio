@@ -22,3 +22,8 @@ body {
     background-color: lightsteelblue;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.profo {
+    width: 100px;
+    height: auto;
+}
