@@ -18,13 +18,29 @@
 
     <h1>Projects</h1>
     <h2><a href="https://nemocase.github.io/conjugator/">Conjugator</a></h2>
-    <p>A website that tests the user with Spanish verbs and their conjugations, drawn from a JSON document.</p>
-    <p>I wanted to make something that would be useful for me. As I'm currently learning Spanish, I decided on something to help me revise.</p>
-    <p>The basic idea was to create something like a digital flashcard, to aid the revision of Spanish verbs and conjugations.</p>
-    <p>Regular verbs follow predictable patterns, so all I needed to store in JSON was a list of verbs and meanings. A series of JavaScript functions
-        then imports the list, selects a verb at random, and applies a formula to conjugate the yo, tú, usted, nosotros, vosotros, and ustedes forms.</p>
-    <p>Irregular verbs conjugate in individual ways, so their conjugations need to be stored in the JSON.</p>
-    <p>When a verb is selected with the Random Word button, a function checks the 'regular' property every verb has to determine if a word is regular or irregular.</p>
+    <div class="textBox>
+        <p>
+            A website that randomly selects a Spanish verb from a JSON list, conjugates it, and displays the result to the user.
+        </p>
+        <p>
+            I wanted to make a tool that I would find useful. As I'm currently learning Spanish, I decided on a revision aid. The basic idea was to create something like a digital flashcard that could test the user
+            on Spanish verbs and their conjugations.
+        </p>
+        <p>
+            The site uses JSON to store a list of verbs. Each verb has three properties:
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            Regular verbs follow predictable patterns, so all I needed to store in JSON was a list of verbs and meanings. A series of JavaScript functions
+            then imports the list, selects a verb at random, and applies a formula to conjugate the yo, tú, usted, nosotros, vosotros, and ustedes forms.
+        </p>
+        <p>
+            Irregular verbs conjugate in individual ways, so their conjugations need to be stored in the JSON. When a verb is selected with the Random Word button,
+            a function checks the 'regular' property every verb has to determine if a word is regular or irregular.
+        </p>
+    </div>
 
     <h2>Pomodoro</h2>
     <p>A website with a timer based on the Pomodoro Technique. The timer counts 4 cycles; each cycle consists of a 25 minute work segment and a 5 minute break. After 4 cycles, the session is complete.</p>
