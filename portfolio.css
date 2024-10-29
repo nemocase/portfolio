@@ -33,6 +33,7 @@ h1 {
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 2%;
+    text-decoration: none;
 }
 
 .imgHalf {
@@ -124,10 +125,6 @@ h2 {
     width: 400px;
     height: 600px;
     margin: 10px;
-}
-
-.panel:a {
-    text-decoration: none;
 }
 
 #leftPanel {
