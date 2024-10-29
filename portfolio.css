@@ -32,8 +32,10 @@ h1 {
 
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 2%;
-    text-decoration: none;
+}
+
+h2:hover {
+    text-decoration: underline;
 }
 
 .imgHalf {
@@ -119,22 +121,16 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    color: black;
     width: 400px;
     height: 600px;
     margin: 10px;
 }
 
-.panelHead {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 2%;
-    font-size: 2vw;
-    color: black;
+.panel a {
     text-decoration: none;
-}
-
-.panelText {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 2%;
+    color: black;
 }
 
 #leftPanel {
