@@ -3,26 +3,175 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background-color: maroon;
+    background-color: white;
 }
 
 #navbar a {
     /* This targets the anchor tags within the navbar. */
     text-decoration: none;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
 }
 
 #navbar a:hover {
-    color: skyblue;
+    color: deeppink;
 }
 
 body {
-    background-color: lightsteelblue;
-    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
 }
 
-#profo {
-    max-width: 200px;
+h1 {
+    font-size: 8vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    padding-left: 2%;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 2%;
+}
+
+.imgHalf {
+    max-width: 50%;
+    height: auto;
+}
+
+.column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: justify;
+    height: 50%;
+    width: auto;
+}
+
+.brick {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: white;
+    padding: 30px;
+    margin: 5px;
+}
+
+.brick:hover {
+    background: deeppink;
+}
+
+.headbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.heading {
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.heading:hover {
+    color: deeppink;
+}
+
+.textBox {
+    max-width: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 2%;
+}
+
+#links {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 32px;
+    max-width: none;
+}
+
+.parallel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+}
+
+#leftPanel {
+    background-color: yellow;
+}
+
+#midPanel {
+    background-color: green;
+}
+
+#rightPanel {
+    background-color: red;
+}
+
+/* 
+@media (max-width: 1050px) {
+    .heading {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 800px) {
+    .heading {
+        font-size: 2em;
+    }
+} */
+
+/* @media (max-width: 740px) {
+    h1 {
+        font-size: 4em;
+    }
+} */
+
+@media (max-width: 550px) {
+    .imgHalf {
+        max-width: 80%;
+    }
+    #homebar {
+        flex-direction: row;
+        margin: 15px;
+    }
+    .brick {
+        padding: 20px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .panel {
+        height: 200px;
+    }
 }
