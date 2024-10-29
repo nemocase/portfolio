@@ -120,11 +120,14 @@ h2 {
     align-items: center;
     font-size: 2vw;
     color: black;
-    text-decoration: none;
     background-color: white;
     width: 400px;
     height: 600px;
     margin: 10px;
+}
+
+.panel:a {
+    text-decoration: none;
 }
 
 #leftPanel {
