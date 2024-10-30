@@ -51,6 +51,7 @@ function panelReset() {
     document.getElementById('xL').style.display = 'none';
     document.getElementById('xM').style.display = 'none';
     document.getElementById('xR').style.display = 'none';
+    document.getElementById('back').style.display = 'none';
     document.getElementById('projects').style.display = 'flex';
 
 }
