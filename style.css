@@ -1,0 +1,366 @@
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+}
+
+#navbar a {
+    /* This targets the anchor tags within the navbar. */
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+}
+
+#navbar a:hover {
+    color: deeppink;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    font-size: 8vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    padding-left: 5%;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    background: white;
+    color: black;
+    padding: 5px;
+}
+
+.imgHalf {
+    max-width: 50%;
+    height: auto;
+}
+
+.frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 3%;
+    padding: 5%;
+}
+
+.column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: justify;
+    height: 50%;
+    width: auto;
+}
+
+.brick {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: white;
+    padding: 30px;
+    margin: 5px;
+}
+
+.brick a {
+    text-decoration: none;
+    color: black;
+}
+
+.brick:hover {
+    background: deeppink;
+}
+
+.headbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 5%;
+}
+
+.heading {
+    font-size: 4vw;
+    text-transform: uppercase;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.heading:hover {
+    color: deeppink !important;
+}
+
+.line {
+    background: white;
+    height: 10px;
+    margin: 5%;
+}
+
+.expand {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textBox {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.textLine {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.course {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+    color: deeppink;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.note {
+    color: silver;
+}
+
+.empty {
+    background: black;
+    width: 30px;
+}
+
+.link {
+    color: silver;
+}
+
+.link:hover {
+    color: deeppink;
+}
+
+#links {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 32px;
+    max-width: none;
+}
+
+.parallelH {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5%;
+}
+
+.parallelV {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10%;
+}
+
+/* 
+.pair {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+} */
+
+#profo {
+    width: 40%;
+    height: auto;
+    margin: 2%;
+}
+
+#homebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: justify;
+    width: 60%;
+    height: 50%;
+    margin: 2%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+}
+
+.panel a {
+    text-decoration: none;
+    padding-left: 2%;
+    color: black;
+}
+
+#back {
+    display: none;
+    text-align: center !important;
+}
+
+#projects {
+   justify-content: space-around;
+   margin: 3%;
+}
+
+/* #proBar {
+    justify-content: space-evenly;
+} */
+
+.panelPic {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+#leftPanel {
+    background-color: yellow;
+}
+#headL {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: yellow;
+    color: black;
+    padding: 20px;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#aPro {
+    background-color: yellow;
+    width: 15%;
+    height: auto;
+}
+#projectText {
+    display: none;
+}
+
+#midPanel {
+    background-color: green;
+}
+#headM {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: green;
+    color: black;
+    padding: 20px;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#bPro {
+    background-color: green;
+    width: 15%;
+    height: auto;
+}
+
+#rightPanel {
+    background-color: red;
+}
+#headR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: red;
+    color: black;
+    padding: 20px;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#cPro {
+    background-color: red;
+    width: 15%;
+    height: auto;
+}
+
+/* 
+@media (max-width: 1050px) {
+    .heading {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 800px) {
+    .heading {
+        font-size: 2em;
+    }
+} */
+
+/* @media (max-width: 740px) {
+    h1 {
+        font-size: 4em;
+    }
+} */
+
+@media (max-width: 550px) {
+    #profo {
+        width: 80%;
+    }
+    #homebar {
+        flex-direction: row;
+        margin: 15px;
+        width: auto;
+    }
+    .brick {
+        padding: 20px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .parallelH {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .panel {
+        height: 200px;
+    }
+}
