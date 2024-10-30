@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
 
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,19 +17,106 @@
     </nav>
 
     <h1>Projects</h1>
-    <div class="gallery">
-        <div class="panel" id="leftPanel">
+    
+    <div class="line" onclick="panelReset()"></div>
+    <p class="heading" id="back" onclick="panelReset()">Back</p>
+
+    <div class="gallery" id="projects">
+        <div class="panel" id="leftPanel" onclick="showPanel('leftPanel')">
             <a href="https://nemocase.github.io/conjugator/" target="_blank"><h2>Conjugator</h2></a>
         </div>
 
-        <div class="panel" id="midPanel">
+        <div class="panel" id="midPanel" onclick="showPanel('midPanel')">
             <a href="snake.html" target="_blank"><h2>Snake</h2></a>
         </div>
 
-        <div class="panel" id="rightPanel">
+        <div class="panel" id="rightPanel" onclick="showPanel('rightPanel')">
             <a href="" target="_blank"><h2>Blackjack</h2></a>
         </div>
     </div>
-</body>
 
+    <div class="expand" id="xL">
+        <div class="textBox">
+            <div id="headL">Conjugator</div>
+
+            <p>I wanted to make something I would find useful. As I'm learning Spanish, I created a tool to help me revise Spanish verbs.</p>
+                
+            <p>Conjugator presents the user with a random Spanish verb in the infinitive and a blank table. Users can guess the conjugations
+                of the verb, then simply click the space in the table to revealthe correct answer.</p>
+                
+            <p>The website uses HTML and CSS, but the back-end is all JavaScript. A JSON file stored on GitHub contains a list of verbs and
+                meanings.</p>
+                
+            <p>By definition, regular verb conjugations follow a consistent pattern, so I simply made a function to apply that pattern to
+                any given string based on the verb ending (-ar/-er/-ir).</p>
+                
+            <p>To deal with irregular verbs, I gave every word in the JSON list a 'regular' property which contains either an array of 
+                conjugations (for irregular verbs), or the value 'reg' (for regular). When the user requests a new word, verbs with the 'reg' 
+                value are passed to the conjugate function, while irregular verbs (and their conjugations) are passed straight to the user 
+                display.</p>
+
+            <p>To avoid words repeating too often, conjugated verbs are added to a global array. If the array contains more than five words,
+                the oldest word is shifted out. When a new verb is chosen from the database, it's checked against this array to avoid repeats.</p>
+                
+            <p>Testing the user was difficult; I tried several more complex methods but all were unsatisfactory. The simplest option proved
+                the best: conjugations are initially hidden from the user, then revealed on click.</p>
+                
+            <p>Though currently limited in scope, Conjugator could easily be expanded to include other tenses (past, future) and other
+                languages, as long as they follow similarly consistent patterns.</p>
+        </div>
+        <div class="headbar">
+            <div class="brick"><a href="https://nemocase.github.io/conjugator/" target="_blank">Demo</a></div>
+            <div class="brick"><a href="https://github.com/nemocase/conjugator" target="_blank">Code</a></div>
+        </div>
+    </div>
+
+    <div class="expand" id="xM">
+        <div class="textBox">
+            <div id="headM">Snake</div>
+
+            <p>One of the classic early videogames: the player moves a snake around a small square, eating dots to grow and 
+                trying to avoid crashing into themselves. I made mine from a tutorial on YouTube (linked on the page).</p>
+                
+            <p>Early in Conjugator's development, I used Python to allow users to interact with an SQL database, but that proved 
+                too complicated when I put it on GitHub. To make sure I had some experience with all the languages taught in the 
+                bootcamp, I decided to use Python for my second project instead. I chose Snake because I'm interested in videogame 
+                design, and I enjoy the stylised aesthetic.</p>
+                
+            <p>The back-end for this version of Snake is (appropriately enough) all Python, hosted on trinket.io. It's embedded in 
+                a simple HTML page, using the same CSS sheet as the rest of my portfolio. I added a background image ('The Equatorial 
+                Jungle' by Henri Rousseau) from Wikimedia Commons for some visual flair.</p>
+                
+            <p>Due to the extremely narrow scope of the project, and the fact I was following a tutorial, I didn't encounter many 
+                serious challenges. My earliest memory of Snake is playing it as a minigame in Timesplitters 2, so I wanted to add the 
+                Snake theme from that game - but this proved difficult. In the end, that element simply wasn't important enough to spend 
+                time on.</p>
+        </div>
+        <div class="headbar">
+            <div class="brick"><a href="snake.html" target="_blank">Demo</a></div>
+            <div class="brick"><a href="https://github.com/nemocase/snake/blob/main/snake.py" target="_blank">Code</a></div>
+        </div>
+    </div>
+
+    <div class="expand" id="xR">
+        <div class="textBox">
+            <div id="headR">Blackjack</div>
+
+            <h2 style="text-align: center;">Coming Soon</h2>
+            <p>Yeah, I didn't have time to finish this one. Sorry!</p>
+            <p>Long story short, it would have used JavaScript (if I could get it to work) to deal the user cards from a deck of 52, 
+                which would remain in the user's hand. The current build uses CSS to create card shapes and position the card number within them.</p>
+            <p>While I used some of the same techniques used in Conjugator to create the deck and deal cards at random, I had trouble
+                avoiding repetitions with such a long array - each card had to be unique. Solving that problem would have been my next step.
+            </p>
+            <p>As with many of my projects, making this in Python probably would have been easier - but would have created either functional or
+                stylistic problems when hosting it on this website.</p>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
