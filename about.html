@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,18 +18,120 @@
 
     <h1>About</h1>
     <div class="headbar">
-        <div class="heading" id="bg">Background</div>
-        <div class="heading" id="edu">Education</div>
-        <div class="heading" id="skills">Skills</div>
-        <div class="heading" id="cv">CV</div>
+        <div class="heading" id="bg" onclick="reveal('sectionBg')">Background</div>
+        <div class="heading" id="ed" onclick="reveal('sectionEd')">Education</div>
+        <div class="heading" id="sk" onclick="reveal('sectionSk')">Skills</div>
+        <div class="heading" id="cv" onclick="reveal('sectionCv')">CV</div>
     </div>
 
-    <div class="textBox" id="">
-        <p>With a background in the humanities as a history student and scriptwriter, I found I was lacking in technical skills.</p>
-        <p>I therefore started the Software Development Bootcamp to broaden my knowledge and capabilities.</p>
-        <p>Since starting the Bootcamp, I've become familiar with HTML, CSS, and JavaScript, and gained some basic knowledge of Python and SQL.</p>
-        <p>In the future I intend to hone my skills at designing websites, and gain more competence adding interactive elements - both useful paths in the creative industries in which I work.</p>
+    <div class="textBox" id="sectionBg" style="display: none;">
+        <p>
+            My background is in the creative industries. I'm a filmmaker, an award-winning playwright, and as a freelancer have written for websites
+            like Rock Paper Shotgun, Eurogamer, and Fanbyte. Since 2019, I've been a scriptwriter for mobile game
+            <a href="https://zrx.app/" target="_blank" class="link">Zombies Run</a>. Other interests of include history (my undergrad degree), food,
+            photography, and visual design, and I've published my own text-based games on itch.io. In my spare time, I'm learning Spanish, with the
+            aim of travelling in Spain and Latin America.
+        </p>
+
+        <p>
+            I joined the Software Development bootcamp because I wanted to round out my skill-set with more tech proficiency. As a freelancer, it's also
+            been several years since I worked a regular nine to five, and I felt that twelve weeks of full-time learning would demonstrate my ability to
+            do so.
+        </p>
+
+        <p>
+            Thanks to my experience with visual design and editing, front-end development has come relatively easily. Though I'm much less confident with
+            back-end code, I've found that providing an elegant, user-friendly interface often requires shifting all the hard work backstage, so I've spent
+            a lot of time strengthening my knowledge of Javascript and Python. I'm most proud of my Conjugator website, which combines what I've learned
+            from the Development bootcamp with what I've learned from my Spanish course.
+        </p>
+
+        <p>
+            With the bootcamp complete, I'm now looking to find a more permanent job in the creative industries, or in sectors like videogame development
+            where art and tech overlap. While I don't think a pure coding job is the right fit for me, I'm certain my newfound skills will be an asset to a
+            more media or people-focused role.
+        </p>
     </div>
+
+    <div class="textBox" id="sectionEd" style="display: none;">
+        <h3>Just IT</h3>
+        <div class="textLine">
+            <span class="top">Software Development Bootcamp</span><span class="date">2024</span><span class="note">12-week full-time course in software and website development.</span>
+        </div>
+
+        <h3>University of Sussex</h3>
+        <div class="textLine">
+            <span class="course">Spanish Level 2</span><span class="date">2024-25</span>
+        </div>
+        <div class="textLine">
+            <span class="course">Spanish Level 1</span><span class="date">2023-24</span><span class="note">Adult education courses of 20 weeks each at the University of Sussex.</span>
+        </div>
+
+        <h3>Goldsmiths' College London</h3>
+        <div class="textLine">
+            <span class="course">MA Scriptwriting</span><span class="date">2016-17</span><span class="note">Accredited Masters programme focused on professional screenwriting and script editing to an industry standard.</span>
+        </div>
+
+        <h3>King's College London</h3>
+        <div class="textLine">
+            <span class="course">BA (Hons) History</span><span class="date">2011-14</span><span class="note">Awarded scholarship in 2012 for academic excellence and work with student theatre.</span>
+        </div>
+    </div>
+
+    <div class="textBox" id="sectionSk" style="display: none;">
+        <h3>PERSONAL</h3>
+        <div class="textLine">
+            <span class="course">COMMUNICATION</span>
+            <span class="empty"></span>
+            <span class="note">Excellent written and spoken communication skills</span>
+        </div>
+        <div class="textLine">
+            <span class="course">ORGANISATION</span>
+            <span class="empty"></span>
+            <span class="note">Self-sufficient, organised, and highly motivated</span>
+        </div>
+        <div class="textLine">
+            <span class="course">INTELLIGENCE</span>
+            <span class="empty"></span>
+            <span class="note">Strong creative problem-solving skills</span>
+        </div>
+        <div class="textLine">
+            <span class="course">TEAMWORK</span>
+            <span class="empty"></span>
+            <span class="note">Experience both working with others and leading projects</span>
+        </div>
+
+        <h3>TECHNICAL</h3>
+        <div class="textLine">
+            <span class="course">PROGRAMMING</span>
+            <span class="empty"></span>
+            <span class="note"> Confident with HTML and CSS; familiar and able with JavaScript, Python, and SQL</span>
+        </div>
+        <div class="textLine">
+            <span class="course">VISUAL DESIGN</span>
+            <span class="empty"></span>
+            <span class="note">Adept with photo and video editing software; some 3D modelling experience</span>
+        </div>
+        <div class="textLine">
+            <span class="course">RESEARCH</span>
+            <span class="empty"></span>
+            <span class="note">Efficient and experience researcher with skills honed at two world-class universities</span>
+        </div>
+        <div class="textLine">
+            <span class="course">IT</span>
+            <span class="empty"></span>
+            <span class="note">Comfortable with the full suite of Office tools and third party equivalents, such as Word, Excel, and InDesign</span>
+        </div>
+    </div>
+
+    <div class="textBox" id="sectionCv" style="display: none;">
+        <div class="brick">
+            <a href="https://github.com/nemocase/portfolio/blob/6ef0baa395b46fd4f83deee7b1144631d0cc74fa/CV%20MacQuarrie%2024.pdf" download>Download PDF</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
