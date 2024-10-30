@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake</title>
 
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('jungle.JPG');
+            background-size: cover;
+        }
+    </style>
 </head>
 
-<body style="background: darkgreen;">
+<body>
     <nav id="navbar">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
@@ -17,10 +23,12 @@
     </nav>
 
     <h1>Snake</h1>
-    
-    <p>Use WSAD to move your snake. Collect the red dots to grow. Avoid crashing into walls... or yourself!</p>
-    
-    <iframe src="https://trinket.io/embed/pygame/72e7395b7afe?outputOnly=true" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <div class="textBox" style="text-align: center;">
+        Use WSAD to move your snake. Collect the red dots to grow. Avoid crashing into walls... or yourself!
+    </div>
+    <div class="frame">
+        <iframe src="https://trinket.io/embed/pygame/72e7395b7afe?outputOnly=true" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
 
     <p>Made with a <a href="https://www.youtube.com/watch?v=BP7KMlbvtOo&list=PLlEgNdBJEO-n8k9SR49AshB9j7b5Iw7hZ&index=1">tutorial</a> from Christian Thompson (TokyoEdtech).</p>
     
